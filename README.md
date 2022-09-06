@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+<h2>Detalhes do que foi feito:</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>- Ln 6 & 7 : Estamos utilizando useState (Ln 1), para criar um "state" no class Function, o primeiro é onde está guardado o que foi escrito no "useState", e o segundo valor, é usado para alterar o que está dentro do "useState" </p>
+<p>Exemplo: const [teste, setTeste] = useState(''), aqui o setTeste é usado para fazer qualquer futura alteração nesse "state", e o teste é usado pra ser chamado em algum local do documento.</p>
 
-## Available Scripts
+<p>- Ln 11 & 14 : const criada pra pegar o valor do input, junto com ela, criar um id, estamos dando uma "identificação" ao input, que vou tentar explicar para o que será usado daqui a pouco XD.</p>
 
-In the project directory, you can run:
+<p>- Ln 16 & 19 : Esse if foi criado com o intuito do input não criar uma tarefa ao apertar "Enter" ou no Botão diretamente, MAS, ao apertar o espaço, ele cria a tarefa o que seria outros 300 pra arrumar XD, o setList está fazendo o "spread" do que foi digitado no input e criando uma nova lista, o "setInput('')", só está aqui para quando digitarmos algo no input, ele fique vazio, sem necessidade de apagar o que continha antes no mesmo.</p>
 
-### `npm start`
+<p>- Ln 22 & 26 : Essa função foi criada com o intuito de apagar um item da lista, o filter é utilizado para filtrar o "id" que foi criado na Ln 13, ele está verificando se o Id é diferente, e o setList na Ln 25 retorna a lista atualizada com exceção do ITEM que você deletou.</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>- Ln 28 & 30 : const criada pra apagar todas às listas, setando uma lista vazia no "setList".</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>- Ln 37 : form criado para utilizar o "Enter" ao digitar no "Input" o "preventDefault" previne o comportamento padrão do form de enviar para o Back-End e atualizar a página, perdendo o conteúdo da lista.</p>
